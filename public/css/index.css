@@ -5,3 +5,119 @@ html {
 body {
   background: #fff;
 }
+
+.card {
+  color:rgb(228, 136, 23);
+}
+
+.card > p {
+  color: #6C2B2B;
+  color: green;
+  color: rgb( 120, 15, 22);
+  color: rgba(120, 15, 22, 0.336);
+  color: hsl(115, 100%, 22%);
+  color: hsla(150, 100%, 22%, 0.79);
+
+  /* -webkit-text-fill-color: aliceblue;
+  -webkit-text-stroke: 1px blueviolet; */
+
+  /* глобальні значення властивостей */
+  /* color: inherit;
+  color: initial;
+  color: unset;
+  color: none; */
+  
+
+  direction: rtl;
+  direction: ltr;
+
+  writing-mode: vertical-rl;
+  writing-mode: horizontal-tb;
+  
+  /* ДЛя тегів, які розтягуються на всю ширину сторінки, типу p, textarea, div, not span */
+  text-align: center;
+  text-align: left;
+  text-align: right;
+  text-align: start;
+  text-align: end;
+  text-align: justify;
+
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+
+  tab-size: 10px;
+  tab-size: 4;
+
+  /* em =>адаптується під розмір тексту! */
+  letter-spacing: 0.01em;
+
+  text-decoration: underline double red;
+
+}
+
+body {
+ font-family: "Roboto", sans-serif;
+ font-size: 16px;
+ font-size: medium;
+ font-weight: 400;
+ font-weight: bolder;
+ font-style: oblique;
+ font-style: italic;
+ font-style: normal;
+
+ font-display: swap;
+
+}
+
+/* просунуті властивості для тексту */
+p {
+	color: lab(29.2345% 39.3825 20.0664);
+	color: lab(52.2345% -40.1645 -59.9971 / .2);
+	/* color: lch(78, 50, 120 / .5); не працюэ! */
+	color: lch(52.2% 72.2 50 / 0.5);
+	color: color-mix(in #123324, 20%, 50%);
+	color: color-mix(in srgb, #34c9eb 20%, white);
+	background-color: color-mix(in lch, plum, pink);
+}
+ button, input {
+	accent-color: green;
+ }
+
+ p {
+	print-color-adjust: economy;
+	print-color-adjust: exact;
+ }
+
+ * {
+	text-rendering: auto;
+	text-rendering: optimizeSpeed;
+	text-rendering: optimizeLegibility;
+	text-rendering: geometricPrecision;
+ }
+
+  span {
+	display: none;
+	display: block;
+	display: inline;
+	display: inline-block;
+
+	margin: 10px;
+	padding: 20px;
+
+  }
+
+  .card {
+	margin: 5%;
+	padding: 10px;
+	/* width: 50px; */
+	width: max-content;
+	min-width: max-content;
+	max-width: max-content;
+	height: 100px;
+
+	box-sizing: content-box;
+	box-sizing: border-box;
+
+  }
+ 

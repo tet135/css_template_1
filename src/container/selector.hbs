@@ -1,0 +1,99 @@
+{{!--
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+--}}
+
+{{!-- <div class="p-5">
+    children
+    <h1>teg h1, teg h1, teg h1</h1>
+
+    <h2>teg h2, teg h2, teg h2</h2>
+
+    <button type="button" class="btn btn-primary">Купити</button>
+
+    <p>Paragraph, Paragraph, Paragraph</p>
+
+    <section>
+        <div class="ps-5">
+            teg in teg= grandchilden
+        </div>
+    </section>
+</div>
+
+<section class="p-5">
+    children
+    <h1>teg h1, teg h1, teg h1</h1>
+    <h2>gthifsdfs</h2>
+    <h2 id="tegh2">teg h2, teg h2, teg h2</h2>
+
+    <button type="button" class="btn btn-primary">Купити</button>
+
+    <p>Paragraph, Paragraph, Paragraph</p>
+
+    <section>
+        <p class="ps-5">
+            teg in teg= grandchilden
+        </p>
+    </section>
+</section> --}}
+
+<section>
+    <h2>selectors. Part 4.</h2>
+    <h3>:target</h3>
+
+    <div class="card p-5 m-5 g-5 dark-card">
+        <a href="#test">посилання</a>
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        test
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        test
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        якорь
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        test
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        test
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        test
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        test
+    </div>
+    <div id="test" class="card p-5 m-5 g-5 dark-card">
+        test
+    </div>
+
+    <h3> :link - селектор невідвіданих посилань</h3>
+    <div class="card p-5 m-5 g-5 dark-card">
+        <a class="link" href="https://www.youtube.com/channel/UCi2ZtuSZEDLFtS0a5wllEMA/search?query=ESTER">link</a>
+    </div>
+    <div class="card p-5 m-5 g-5 dark-card">
+        <a class="link" href="http://google.github.io/googletest/">link</a>
+    </div>
+
+    <h3>:hover - селектор наведення</h3>
+
+    <h3>:active - селектор активного тегу (працює при натисканні)</h3>
+
+    <h3> :focus - аналог active для input tegs</h3>
+    <div class="card p-5 m-5 g-5 dark-card">
+        <input class="link">
+    </div>
+
+    <h3>:focus-within - фокус для форми, якщо ми взаємодіємо з якимось елементом цієї форми</h3>
+</section>
+
+
+
+{{!--
+Цей код містить лише те, що буде виводитись в
+
+<body>
+    Адже наш layout/default.hbs має вже структуру HTML
+    --}}
