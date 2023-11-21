@@ -11,17 +11,18 @@
 
 .header {
 	padding: 24px;
+	border-bottom: 1px solid #DEE2E6;
 }
 
 .logo {
  font-size: 17px;
 }
 
-.divider {
+/* .divider {
 	margin: 0;
 	height: 1px;
 	background: #DEE2E6;
-}
+} */
 
 .nav {
 	display: block;
@@ -60,6 +61,7 @@
 
 .footer {
 	padding: 24px 0;
+	border-top: 1px solid #DEE2E6;
 }
 
 .header_copyright {
@@ -90,6 +92,26 @@
 	text-align: center;
 	max-width: 585px;
 	margin: 0 auto;
+	line-height: 150%;
+}
+
+.card {
+	border: 1px solid blue;
+	border-radius: 5%;
+}
+
+.plans_card:nth-child(2) {
+	border: 10px groove violet;
+	visibility: hidden;
+}
+
+.card:hover {
+	outline: 1px solid blue;
+	outline-offset: 5px;
+	box-shadow: 5px 5px 10px 0 rgb(129, 129, 230);
+	cursor: pointer;
+
+
 }
 
 .plans_card:not(:last-of-type) {
@@ -122,6 +144,7 @@
 .card_price_duration {
 	font-size:  29px;
 	color: #6C757D;
+	vertical-align: top;
 
 }
 
@@ -138,4 +161,64 @@
 	width: 100%;
 	font-size: 19px;
 	padding: 9px;
+	border-radius: 25px;
+
+}
+
+h1 {
+	text-shadow: 10px 5px 5px rgb(0, 102, 255);
+}
+
+.btn:hover {
+	box-shadow: 5px 5px 10px 0 rgb(129, 129, 230);
+}
+
+p {
+	background: grey;
+	/* width: 200px;
+	height: 100px;
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-y: overlay;
+	overflow: hidden;
+	text-overflow: ellipsis; */
+	text-align: left;
+	white-space: normal;
+	white-space: nowrap;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: break-spaces;
+	white-space: pre-line;
+
+	
+}
+
+.overflow {
+	overflow-wrap: anywhere;
+	overflow-wrap: break-word;
+}
+
+
+
+.hero_title {
+	width: 660px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	height: 70px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hero_text {
+	width: 200px;
+	/* width: min-content; */
+	word-break: break-all;
+	word-break: keep-all;
+	word-break: break-word;
+
+	hyphens: manual;
+
+	overflow: auto;
+	resize: both;
+	
 }
