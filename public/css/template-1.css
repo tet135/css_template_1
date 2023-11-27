@@ -1,4 +1,10 @@
 
+:root {
+	--grey1: #212529;
+	--space-medium: 24px;
+}
+
+
 .page {
 	background-color: #fff;
 	padding: 0 15px;
@@ -10,7 +16,7 @@
 }
 
 .header {
-	padding: 24px;
+	padding: var(--space-medium);
 	border-bottom: 1px solid #DEE2E6;
 }
 
@@ -35,8 +41,8 @@
 }
 
 .nav_link:hover {
-	color: blue;
 	text-decoration: underline;
+	opacity: 45%;
 }
 
 
@@ -47,7 +53,7 @@
 }
 
 .nav_inline > .nav_link:not(:last-child) {
-	margin-right: 24px;
+	margin-right: var(--space-medium);
 }
 
 .header_nav_right {
@@ -81,7 +87,7 @@
 .hero_title {
 	font-size: 56px;
 	font-weight: 500;
-	color: #212529;
+	color: var(--grey1, #212529);
 	text-align: center;
 	margin-bottom: 12px;
 }
@@ -115,18 +121,18 @@
 }
 
 .plans_card:not(:last-of-type) {
- margin-right: 24px;
+ margin-right: var(--space-medium);
 }
 
 .card-header {
 	font-size: 20px;
-	color: #212529;
+	color: var(--grey1, #212529);
 	text-align: center;
 	padding: 12px;
 }
 
 .card-body {
-	padding: 24px;
+	padding: var(--space-medium);
 	text-align: center;
 }
 
@@ -137,7 +143,7 @@
 .card_price_amount {
 	text-align: center;
 	font-size: 40px;
-	color: #212529;
+	color: var(--grey1, #212529);
 	
 }
 
@@ -150,7 +156,7 @@
 
 .card_description-item {
 	font-size: 16px;
-	color: #212529;
+	color: var(--grey1, #212529);
 	
 	display: block;
 	margin-bottom: 12px;
@@ -171,6 +177,7 @@ h1 {
 
 .btn:hover {
 	box-shadow: 5px 5px 10px 0 rgb(129, 129, 230);
+	opacity: 50%;
 }
 
 p {
@@ -220,5 +227,108 @@ p {
 
 	overflow: auto;
 	resize: both;
-	
+}
+
+body {
+	background: red;
+	background-image: url(/img/test.svg);
+	background-repeat: repeat-x;
+	/* round заповнює весь простір, адаптуючи розмір картинки */
+	background-repeat: round;
+}
+
+/* .page {
+	background-color: transparent;
+	background-image: url(/img/test1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+} */
+
+.hero_text {
+	/* background-image: url(/img/test.svg);
+	background-image: url(/img/test1.jpg);
+	background-attachment: fixed; */
+	/* background-attachment: scroll;
+	background-attachment: local;
+	height: 30px;
+	overflow: auto; */
+
+	/* background-image: url(/img/test1.jpg);
+	background-size: cover; */
+	/* -webkit-background-clip: text; */
+	/* background-clip: border-box;
+	padding: 40px;
+	border: 20px solid transparent;
+	width: 500px;
+	color: firebrick;
+
+	background-origin: border-box; */
+
+	border-image-source: url(/img/test1.jpg);
+	border-image-width: 10%;
+	border-image-slice: 10%;
+
+	border-image-repeat: round;
+
+	border-image-outset: 50px;
+}
+
+.card {
+	background-image: linear-gradient(146.61deg, rgba(222, 19, 19, 0.6) -85.01%, rgba(239, 13, 13, 0) 97.99%);;
+}
+
+
+/* 
+
+background: linear-gradient(180deg, rgba(253, 176, 176, 0.68) 0%, rgba(217, 217, 217, 0) 100%);
+
+
+
+background: radial-gradient(50% 50% at 50% 50%, #71FF2E 0%, rgba(255, 255, 255, 0.37) 100%); */
+
+
+
+.card_block {
+	list-style-type: square;
+	list-style-position: outside;
+	list-style-image: linear-gradient(45deg, red 0%, orange 50%);
+}
+
+.card_description-item {
+	display: list-item;
+}
+
+/* .table tr {
+	border: 1px solid gray;
+} */
+
+.table tr td {
+	border: 1px solid rgb(219, 127, 127);
+	border-bottom-color: red;
+	border-right-color: blue;
+}
+
+.table {
+	width: 600px;
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 10px;
+	caption-side: top;
+	empty-cells: hide;
+}
+
+.nav_link::before,
+.nav_link::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+
+	background-image: url(/img/test1.jpg);
+}
+
+.calc {
+	width: 600px;
+	margin-left: calc(50% - (600px / 2))
 }

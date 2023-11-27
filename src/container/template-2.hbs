@@ -1,12 +1,12 @@
 <div class="page">
 	<div class="page_content">
 		<header class="page_block">
-			<div class="header row g-0">
-				<div class="col-3">
+			<div class="header">
+				<div class="">
 					{{>logo }}
 				</div>
 
-				<nav class="header_link col-9">
+				<nav class="header_link">
 					<div class="header_nav_right">
 						{{>nav list=header }}
 					</div>
@@ -21,15 +21,12 @@
 				<a class="button" href="{{button.url}}">{{button.text}}</a>
 				{{/with}}
 			</div>
-
 		</section>
 
 		<section class="page_block">
-			<div class="row g-4">
+			<div class="flex_container">
 				{{#each preview}}
-				<div class="col-6">
-					{{>cardPreview data=this}}
-				</div>
+				{{>cardPreview class="flex_item" data=this}}
 				{{/each}}
 			</div>
 		</section>
@@ -39,14 +36,12 @@
 				<div class="row g-0">
 					<div class="col-12">
 						<div class="list_header">
-							<div class="row g-0">
-								<h3 class="col-6 list_title">List of posts</h3>
-								<div class="col-6">
-									<div class="catogory_list">
-										{{#each categories}}
-										<button class="category_button">{{text}}</button>
-										{{/each}}
-									</div>
+							<h3 class=" list_title">List of posts</h3>
+							<div class="">
+								<div class="catogory_list">
+									{{#each categories}}
+									<button class="category_button">{{text}}</button>
+									{{/each}}
 								</div>
 							</div>
 						</div>
@@ -68,22 +63,18 @@
 							{{>linkList data=social title="Social"}}
 						</aside>
 					</div>
-
 				</div>
-
-
-
 			</div>
 		</main>
 
 		<footer class="page_block">
-			<div class="row g-0 footer">
-				<div class="col-3">
+			<div class="footer">
+				<div>
 					{{>logo }}
 					<span class="header_copyright">Copyright 2023-2024</span>
 				</div>
 				{{#each footer}}
-				<div class="col-3">
+				<div>
 					<span class="footer_title">{{title}}</span>
 					{{>nav list=links isVertical=true}}
 				</div>

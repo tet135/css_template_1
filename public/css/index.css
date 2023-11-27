@@ -120,4 +120,24 @@ p {
 	box-sizing: border-box;
 
   }
+
+  /* ==////================================= */
+
+  .column {
+	columns: 3;
+	
+	column-gap: 40px;
+	column-rule: 10px dotted #34c9eb;
+  }
  
+  .column > span {
+	/*not working??? column-span: all; */
+	text-decoration-line: underline;
+	text-decoration-color: orange;
+	background-color: aqua;
+	border-radius: 20px;
+	text-shadow: 10px 10px 2px rgb(22, 204, 22);
+	text-decoration-style: wavy;
+	box-decoration-break: clone;	
+
+  }

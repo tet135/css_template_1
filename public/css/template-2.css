@@ -12,6 +12,8 @@
 .header {
 	padding: 24px;
 	border-bottom: 1px solid #DEE2E6;
+	display: flex;
+	justify-content: space-between;
 }
 
 .logo {
@@ -62,6 +64,8 @@
 .footer {
 	padding: 24px 0;
 	border-top: 1px solid #DEE2E6;
+	display: flex;
+	justify-content: space-between;
 }
 
 .header_copyright {
@@ -96,6 +100,10 @@
 	background: #343A40;
 	border-radius: 24px;
 	padding: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 	
 }
 
@@ -180,8 +188,10 @@
 
 .list_header {
 	border-bottom: 1px solid #DEE2E6;
-	padding: 12px;
+	padding-y: 12px;
 	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .category_button {
@@ -295,3 +305,35 @@
 .link_item:hover {
 	text-decoration: underline;
 }
+
+.flex_container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+   height: auto;
+   align-content: stretch;
+
+   align-items: stretch;
+   gap: 24px;
+}
+
+.flex_item {
+	flex-basis: calc(50% - (24px / 2));
+
+}
+
+/* .flex_item:first-of-type {
+	margin-right: 24px;
+	margin-bottom: 24px;
+
+}
+
+.flex_item:nth-of-type(2) {
+	margin-bottom: 24px;
+}
+
+.flex_item:nth-of-type(3) {
+	margin-right: 24px;
+} */
