@@ -295,3 +295,14 @@ template-3 */
 	background-color: var(--color-white);
 	color: var(--color-text);
 }
+
+/* абсолютне позиціювання++++++++++++++++ */
+
+/* .hero_image {
+	position: absolute;
+	right: 50%;
+}
+
+.hero {
+	position: relative;
+} */
