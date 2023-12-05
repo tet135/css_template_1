@@ -860,8 +860,9 @@ router.get('/template-6', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('template-6', {
+    layout: "template-6",
     page: {
-      title: "Example Page"
+      title: "template-6"
     },
       header: [
         {
