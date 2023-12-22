@@ -3,6 +3,13 @@
     src: url('/font/HelveticaNeueBold.ttf');
 }
 
+
+body {
+    font-family: "HelveticaNeueBold", sans-serif;
+    background-color: var(--color-white);
+}
+
+
 @layer normalize, component, variant, main, adaptive;
 
 :root {
@@ -115,11 +122,6 @@
         height: 14px;
         width: 24px;
     }
-}
-
-body {
-    font-family: "HelveticaNeueBold", sans-serif;
-    background-color: var(--color-white);
 }
 
 @layer main {
